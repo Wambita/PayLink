@@ -1,3 +1,76 @@
+/*Home page*/
+body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fffdf4;
+      color: #222;
+    }
+
+    header {
+      background-color: #F6C700;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .cta {
+      background: #fff;
+      border: 2px dashed #F6C700;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #F6C700;
+      color: #111;
+      padding: 0.8rem 1.5rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .cta a:hover {
+      background-color: #c5a100;
+      color: white;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+      border-top: 1px solid #eee;
+    }
+
 :root {
   --stellar-yellow: #F6C700;
   --background: #fefefe;
