@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PayLink Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>PayLink Generator (Stellar Testnet)</h1>
+
+    <form id="payForm">
+      <label>Destination Wallet (Public Key):</label>
+      <input type="text" id="wallet" required placeholder="G..." />
+
+      <label>Amount (XLM):</label>
+      <input type="number" id="amount" required step="0.01" />
+
+      <button type="submit">Generate Payment Link</button>
+    </form>
+
+    <div id="linkBox" class="hidden">
+      <h3>Payment Link:</h3>
+      <p id="paymentLink"></p>
+    </div>
+
+    <div id="statusBox" class="hidden">
+      <h3>Listening for payment...</h3>
+      <p id="paymentStatus">Waiting for payment...</p>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar-sdk/10.5.0/stellar-sdk.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
