@@ -2,35 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>PayLink Demo</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PayLink – Borderless Payments</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>PayLink Generator (Stellar Testnet)</h1>
+  <header>
+    <h1>PayLink</h1>
+    <p>Borderless payments for everyone, powered by Stellar</p>
+  </header>
 
-    <form id="payForm">
-      <label>Destination Wallet (Public Key):</label>
-      <input type="text" id="wallet" required placeholder="G..." />
+  <section>
+    <h2>What is PayLink?</h2>
+    <p>PayLink is a lightweight tool that helps freelancers, creators, and small businesses receive payments globally using Stellar. No banks, no borders — just fast, affordable transactions in seconds.</p>
 
-      <label>Amount (XLM):</label>
-      <input type="number" id="amount" required step="0.01" />
-
-      <button type="submit">Generate Payment Link</button>
-    </form>
-
-    <div id="linkBox" class="hidden">
-      <h3>Payment Link:</h3>
-      <p id="paymentLink"></p>
+    <div class="two-col">
+      <div>
+        <h3> How it Works</h3>
+        <ul>
+          <li>Enter your Stellar public wallet address</li>
+          <li>Specify amount to receive (XLM)</li>
+          <li>Generate and share a payment link</li>
+          <li>Get notified instantly when you're paid</li>
+        </ul>
+      </div>
+      <div>
+        <h3> Why Stellar?</h3>
+        <ul>
+          <li>Near-zero transaction fees</li>
+          <li>Fast settlement in 2–5 seconds</li>
+          <li>Support for XLM and stablecoins like USDC</li>
+          <li>Open, transparent, and scalable</li>
+        </ul>
+      </div>
     </div>
 
-    <div id="statusBox" class="hidden">
-      <h3>Listening for payment...</h3>
-      <p id="paymentStatus">Waiting for payment...</p>
+    <div class="cta">
+      <h3>Try the Demo</h3>
+      <p>Use the Stellar Testnet to try PayLink now.</p>
+      <a href="./paylink.html">Generate a Payment Link →</a>
     </div>
-  </div>
+  </section>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar-sdk/10.5.0/stellar-sdk.min.js"></script>
-  <script src="app.js"></script>
+  <section>
+    <h2>Who We Are</h2>
+    <p>PayLink is a project by <strong>Wambita Sheila Fana</strong>, a software developer passionate about inclusive tech, borderless tools, and exploring the real power of Web3 for underserved communities.</p>
+    <p>We're building tools that make global finance accessible to everyone — no matter where you're from.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 PayLink by Sheila Fana. Built with  on Stellar.
+  </footer>
 </body>
 </html>
